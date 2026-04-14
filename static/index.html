@@ -9,48 +9,70 @@
         <main>
             <h1>Найди себе друга!</h1>
             <form action="/pets/orders" method="post">
-                <input name="petType" id="petType" placeholder="Тип питомца" />
-                <input
-                    name="gender"
-                    id="gender"
-                    type="text"
-                    placeholder="Пол"
-                />
+                <label for="petType">Тип питомца</label>
+                <select name="petType" id="petType">
+                    <option value="cat">cat</option>
+                    <option value="dog">dog</option>
+                    <option value="tiger">tiger</option>
+                </select>
+                
+                <label>Пол: 
+                    <input type="radio" name="gender" value="boy"> boy
+                    <input type="radio" name="gender" value="girl"> girl
+                    <input type="radio" name="gender" value="none"> none
+                </label>
+
+                <label for="eyeColor">Цвет глаз</label>
                 <input
                     name="eyeColor"
                     id="eyeColor"
                     type="color"
                     title="Цвет глаз"
                 />
+
+                <label for="tailLength">Длина хвоста</label>
                 <input
                     name="tailLength"
                     id="tailLength"
                     type="number"
                     placeholder="Длина хвоста"
+                    min="7"
+                    max="120"
                 />
-                <input name="name" id="name" type="text" placeholder="Имя" />
+
+                <label for="name">Имя</label>
+                <input name="name" id="name" type="text" placeholder="Имя" minlength="3" maxlength="50" />
+
+                <label for="dateOfBirth">Дата рождения</label>
                 <input
                     name="dateOfBirth"
                     id="dateOfBirth"
                     type="date"
                     title="Дата рождения"
                 />
+
+                <label for="email">Электронная почта</label>
                 <input
                     name="email"
                     id="email"
                     type="email"
                     placeholder="Электронная почта"
                 />
+
+                <label for="phone">Телефон</label>
                 <input
                     name="phone"
                     id="phone"
                     type="tel"
                     placeholder="Телефон"
+                    required
                 />
+
                 <label>
-                    <input name="rules" id="rules" type="checkbox" /> Я согласен
+                    <input name="rules" id="rules" type="checkbox" value="true" /> Я согласен
                     с правилами
                 </label>
+                
                 <input type="submit" value="Отправить" />
             </form>
         </main>
