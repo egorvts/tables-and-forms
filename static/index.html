@@ -1,16 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Форма выбора питомца</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<main>
-    <h1>Найди себе друга!</h1>
-
-    <!--Форму размещай тут-->
-
-</main>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Форма выбора питомца</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main>
+            <h1>Найди себе друга!</h1>
+            <form action="/pets/orders" method="post">
+                <input name="petType" id="petType" placeholder="Тип питомца" />
+                <input
+                    name="gender"
+                    id="gender"
+                    type="text"
+                    placeholder="Пол"
+                />
+                <input
+                    name="eyeColor"
+                    id="eyeColor"
+                    type="color"
+                    title="Цвет глаз"
+                />
+                <input
+                    name="tailLength"
+                    id="tailLength"
+                    type="number"
+                    placeholder="Длина хвоста"
+                />
+                <input name="name" id="name" type="text" placeholder="Имя" />
+                <input
+                    name="dateOfBirth"
+                    id="dateOfBirth"
+                    type="date"
+                    title="Дата рождения"
+                />
+                <input
+                    name="email"
+                    id="email"
+                    type="email"
+                    placeholder="Электронная почта"
+                />
+                <input
+                    name="phone"
+                    id="phone"
+                    type="tel"
+                    placeholder="Телефон"
+                />
+                <label>
+                    <input name="rules" id="rules" type="checkbox" /> Я согласен
+                    с правилами
+                </label>
+                <input type="submit" value="Отправить" />
+            </form>
+        </main>
+    </body>
 </html>
