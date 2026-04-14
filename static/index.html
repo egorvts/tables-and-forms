@@ -15,11 +15,11 @@
                     <option value="dog">dog</option>
                     <option value="tiger">tiger</option>
                 </select>
-                
-                <label>Пол: 
-                    <input type="radio" name="gender" value="boy"> boy
-                    <input type="radio" name="gender" value="girl"> girl
-                    <input type="radio" name="gender" value="none"> none
+
+                <label
+                    >Пол: <input type="radio" name="gender" value="boy" /> boy
+                    <input type="radio" name="gender" value="girl" /> girl
+                    <input type="radio" name="gender" value="none" /> none
                 </label>
 
                 <label for="eyeColor">Цвет глаз</label>
@@ -41,7 +41,14 @@
                 />
 
                 <label for="name">Имя</label>
-                <input name="name" id="name" type="text" placeholder="Имя" minlength="3" maxlength="50" />
+                <input
+                    name="name"
+                    id="name"
+                    type="text"
+                    placeholder="Имя"
+                    minlength="3"
+                    maxlength="50"
+                />
 
                 <label for="dateOfBirth">Дата рождения</label>
                 <input
@@ -69,10 +76,16 @@
                 />
 
                 <label>
-                    <input name="rules" id="rules" type="checkbox" value="true" /> Я согласен
-                    с правилами
+                    <input
+                        name="rules"
+                        id="rules"
+                        type="checkbox"
+                        value="true"
+                    />
+                    Я согласен с правилами
                 </label>
-                
+
+                <input type="reset" value="Сбросить" />
                 <input type="submit" value="Отправить" />
             </form>
         </main>
